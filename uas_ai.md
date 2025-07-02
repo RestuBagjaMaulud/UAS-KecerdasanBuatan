@@ -3,6 +3,7 @@
 ## Nama Kelompok
 - Restu Bagja Maulud (2306043)
 
+
 # Business Understanding
 ## Permasalahan Dunia Nyata
 Penyakit liver merupakan salah satu penyakit yang sering kali tidak menunjukkan gejala jelas pada tahap awal. Hal ini menyebabkan banyak pasien baru menyadari adanya masalah pada hati ketika penyakit sudah memasuki tahap lanjut. Dalam dunia medis, diagnosis dini terhadap penyakit ini sangat penting agar penanganan bisa lebih cepat dan tepat. Oleh karena itu, dibutuhkan sistem yang mampu membantu diagnosis dini berdasarkan data hasil tes laboratorium pasien.
@@ -16,6 +17,7 @@ Pengguna dari sistem ini meliputi:
 - Mahasiswa dan akademisi dalam bidang Data Science dan Kesehatan
 ## Manfaat Implementasi AI
 Dengan menggunakan metode kecerdasan buatan, proses diagnosis penyakit liver dapat menjadi lebih cepat, efisien, dan berbasis data. Model machine learning seperti Decision Tree dan Neural Network memungkinkan sistem untuk mendeteksi pola dari data medis yang kompleks dan membantu dokter dalam mendeteksi penyakit sebelum munculnya gejala klinis yang jelas. AI juga mengurangi kemungkinan kesalahan manusia dalam proses diagnosis.
+
 
 # Data Understanding
 ## Sumber Data
@@ -41,6 +43,7 @@ Data terdiri dari ratusan baris, dengan setiap baris mewakili satu pasien. Data 
 ## Tipe Data dan Targer Klasifikasi
 Dataset terdiri dari kombinasi data numerik dan kategorikal. Fitur target adalah kolom "Dataset" yang memiliki dua nilai klasifikasi: 0 dan 1, menjadikan masalah ini sebagai tugas klasifikasi biner.
 
+
 # Exploratory Data Analysis (EDA)
 ## Visualisasi Distribusi Data
 Distribusi umur pasien sebagian besar berada di rentang 30–60 tahun. Gender menunjukkan distribusi tidak seimbang, dengan pasien laki-laki lebih banyak daripada perempuan. Nilai Total Bilirubin dan SGPT menunjukkan distribusi yang miring (skewed), yang mengindikasikan adanya outlier atau data ekstrem.
@@ -51,6 +54,7 @@ Data menunjukkan ketidakseimbangan pada target klasifikasi, di mana jumlah pasie
 ## Insight Awal dari Pola Data
 Fitur-fitur yang berkaitan dengan kadar enzim hati dan bilirubin tampak berkontribusi besar dalam klasifikasi penyakit liver. Analisis awal ini memberikan petunjuk bahwa model dapat memanfaatkan fitur-fitur tersebut untuk klasifikasi yang akurat.
 
+
 # Data Preparation 
 ## Pembersihan Data (Null Value, Duplikasi)
 Data diperiksa dan dibersihkan dari nilai kosong dan duplikasi. Penghapusan dilakukan karena jumlah data kosong tidak terlalu banyak dan tidak memengaruhi distribusi data secara signifikan.
@@ -60,6 +64,7 @@ Data kategorikal seperti Gender diubah menjadi bentuk numerik dengan teknik labe
 Beberapa fitur numerik memiliki skala berbeda-beda. Oleh karena itu, dilakukan standardisasi menggunakan StandardScaler agar model dapat belajar secara seimbang dari semua fitur.
 ## Split Data (Train-Test)
 Dataset dibagi menjadi dua bagian: 80% untuk pelatihan (train) dan 20% untuk pengujian (test) dengan random_state untuk memastikan replikasi hasil yang konsisten.
+
 
 # Modeling
 ## Pemilihan Algoritma
@@ -73,17 +78,19 @@ Kedua model diimplementasikan dalam Google Colab dengan bahasa Python dan pustak
 ## Visualisasi Model
 Model Decision Tree divisualisasikan menggunakan plot_tree() agar aturan-aturan klasifikasi bisa dilihat secara langsung dan mudah dipahami oleh user non-teknis.
 
+
 # Evaluation
 ## Confusion Matrix
 Confusion matrix dari kedua model menampilkan hasil klasifikasi terhadap kelas 0 dan 1 (tidak sakit dan sakit liver), yang mencakup nilai TP, FP, TN, dan FN.
 ## Metrik Evaluasi
-|     Metrik     | Akurasi |  AUC  | Precision |     Recall    |        F1-Score        |
+|     Metrik     | Akurasi |  AUC  | Precision |     Recall    |        F1-Score        | 
 |----------------|-----------------------------|---------------|------------------------|
 | Decision Tree  | 75.56%  | 0.898 |  Tinggi   |    Stabil     |        Seimbang        |
 | Neural Network | 74.17%  | 0.671 |  Sedang   | Kurang stabil | Cenderung lebih rendah |
 |----------------|-----------------------------|---------------|------------------------|
 ## Penjelasan Kinerja Model
 Model Decision Tree menunjukkan performa yang lebih unggul dalam hal akurasi dan AUC. Selain itu, interpretasi yang mudah dari Decision Tree menjadikannya lebih cocok untuk aplikasi medis yang membutuhkan transparansi keputusan. Neural Network masih dapat ditingkatkan dengan tuning parameter dan penggunaan data yang lebih besar.
+
 
 # Kesimpulan dan Rekomendasi
 ## Ringkasan Hasil Modeling dan Evaluasi
@@ -97,6 +104,7 @@ Kelebihan Decision Tree adalah interpretasi mudah dan performa baik di dataset k
 - Lakukan hyperparameter tuning untuk Neural Network.
 - Uji model lain seperti Random Forest atau Gradient Boosting.
 - Terapkan teknik balancing data seperti SMOTE untuk atasi kelas tidak seimbang.
+
 
 # Referensi
 1. 
