@@ -107,7 +107,14 @@ Kelebihan Decision Tree adalah interpretasi mudah dan performa baik di dataset k
 
 
 # Referensi
-1. 
+1. Patimah, E., Haekal, V. B., & Sandya Prasvita, D. (2021). Klasifikasi Penyakit Liver dengan Menggunakan Metode Decision Tree. Seminar Nasional Mahasiswa Ilmu Komputer Dan Aplikasinya (SENAMIKA) Jakarta-Indonesia, 2(1), 655–659.
+2. Setiawati, I., Wibowo, A. P., & Hermawan, A. (2019). Pendahuluan Tinjauan Pustaka Penelitian Sebelumnya Klasifikasi. Jurnal of Information System Management, 1(1), 13–17.
+3. Sodikin, D. A., Prayoga, R., & Purwanto, A. N. I. (2024). Analisis Metode Decision Tree Dan Naïve Bayes Pada Pasien Penyakit Liver. Prosiding TAU SNARS-TEK Seminar Nasional Rekayasa Dan Teknologi, 3(1), 12–18.
+4. Ayudhitama, A. P., & Utomo Pujianto. (2020). Analisa 4 Algoritma Dalam Klasifikasi Liver Menggunakan Rapidminer. Jurnal Informatika Polinema, 6(2), 1–9. https://doi.org/10.33795/jip.v6i2.274
+5. Restiani, D.-. (2018). Kombinasi Algoritma Cart Dan Ripper Untuk Mendiagnosis Penyakit Liver Berbasis Correlation Based Feature Selection. Jurnal Teknik Informatika, 11(1), 31–36. https://doi.org/10.15408/jti.v11i1.6660
+
+
+# Lampiran
 
 
 
