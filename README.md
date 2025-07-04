@@ -1,5 +1,5 @@
-# UAS-KecerdasanBuatan
-# Klasifikasi Penyakit Liver dengan Decision Tree & Neural Network
+# UAS-KecerdasanBuatan - Restu Bagja Maulud
+# Klasifikasi Penyakit Liver Menggunakan Decision Tree & Neural Network
 Proyek ini dibuat untuk memenugi tugas besar mata kuliah Kecerdasan Buatan, yang bertujuan membangun sistem klasifikasi penyakit liver (hati) menggunakan algoritma Decision Tree dan Neural Network.
 
 # Tujuan Proyek
