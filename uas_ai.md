@@ -37,7 +37,7 @@ Berikut ini adalah deskripsi masing-masing atribut yang terdapat dalam dataset:
 |  9  | Albumin                     | Protein utama dalam plasma darah                                         |
 |  10 | Albumin_and_Globulin_Ratio  | Rasio antara albumin dengan globulin, menandakan fungsi hati             |
 |  11 | Dataset                     | Label target, 1 = menderita penyakit liver, 0 = sehat                    |
-|-----|-----------------------------|--------------------------------------------------------------------------|
+
 ## Ukuran dan Format Data
 Data terdiri dari ratusan baris, dengan setiap baris mewakili satu pasien. Data disimpan dalam format CSV (Comma Separated Values) dan terdiri dari 11 kolom. Data ini siap digunakan dalam proses preprocessing dan pelatihan model.
 ## Tipe Data dan Targer Klasifikasi
@@ -85,10 +85,9 @@ Confusion matrix dari kedua model menampilkan hasil klasifikasi terhadap kelas 0
 ## Metrik Evaluasi
 
 |     Metrik     | Akurasi |  AUC  | Precision |     Recall    |        F1-Score        | 
-|----------------|-----------------------------|---------------|------------------------|
+|----------------|---------|-------|-----------|---------------|------------------------|
 | Decision Tree  | 75.56%  | 0.898 |  Tinggi   |    Stabil     |        Seimbang        |
 | Neural Network | 74.17%  | 0.671 |  Sedang   | Kurang stabil | Cenderung lebih rendah |
-|----------------|-----------------------------|---------------|------------------------|
 
 ## Penjelasan Kinerja Model
 Model Decision Tree menunjukkan performa yang lebih unggul dalam hal akurasi dan AUC. Selain itu, interpretasi yang mudah dari Decision Tree menjadikannya lebih cocok untuk aplikasi medis yang membutuhkan transparansi keputusan. Neural Network masih dapat ditingkatkan dengan tuning parameter dan penggunaan data yang lebih besar.
