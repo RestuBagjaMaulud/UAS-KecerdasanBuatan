@@ -125,3 +125,8 @@ Kelebihan Decision Tree adalah interpretasi mudah dan performa baik di dataset k
 
 
 # 10. Lampiran
+## Dataset Mentah
+- Nama File: liver_dataset.csv
+- Format: CSV
+- Jumlah Data: 583 baris, 11 kolom
+- Sumber: https://www.kaggle.com/datasets/abhi8923shriv/liver-disease-patient-dataset
