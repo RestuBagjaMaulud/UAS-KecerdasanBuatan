@@ -37,7 +37,9 @@ Proyek ini dibuat untuk memenugi tugas besar mata kuliah Kecerdasan Buatan, yang
 - Confusion Matrix untuk tiap model.
 - Metrik: Accuracy, Precision, Recall, F1-score, AUC.
 - Perbandingan hasil Decision Tree vs Neural Network:
+
 |      Model     | Accuracy |  AUC  |
+|----------------|----------|-------|
 | Decision Tree  |  75.56%  | 0.898 |
 | Neural Network |  74.17%  | 0.671 |
 
