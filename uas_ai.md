@@ -47,6 +47,9 @@ Dataset terdiri dari kombinasi data numerik dan kategorikal. Fitur target adalah
 # Exploratory Data Analysis (EDA)
 ## Visualisasi Distribusi Data
 Distribusi umur pasien sebagian besar berada di rentang 30–60 tahun. Gender menunjukkan distribusi tidak seimbang, dengan pasien laki-laki lebih banyak daripada perempuan. Nilai Total Bilirubin dan SGPT menunjukkan distribusi yang miring (skewed), yang mengindikasikan adanya outlier atau data ekstrem.
+
+![Visualisasi Distribusi Data](Images/Distribusi_Setiap_Fitur.png)
+
 ## Analisis Korelasi Antar Fitur
 Heatmap korelasi mengungkapkan bahwa fitur Total_Bilirubin memiliki korelasi tinggi dengan Direct_Bilirubin. SGPT dan SGOT juga menunjukkan korelasi yang kuat satu sama lain. Ini menunjukkan bahwa beberapa fitur saling berkaitan erat secara medis.
 ## Deteksi Data Tidak Seimbang (Imbalanced Classes)
