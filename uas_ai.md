@@ -1,6 +1,6 @@
 # Laporan Proyek Machine Learning - Restu Bagja Maulud
 # Klasifikasi Penyakit Liver Menggunakan Algoritma Decision Tree dan Neural Network
-## Nama Kelompok
+## Anggota Kelompok
 - Restu Bagja Maulud (2306043)
 
 
