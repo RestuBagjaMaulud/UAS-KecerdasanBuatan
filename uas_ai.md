@@ -1,10 +1,15 @@
 # Laporan Proyek Machine Learning - Restu Bagja Maulud
-# Klasifikasi Penyakit Liver Menggunakan Algoritma Decision Tree dan Neural Network
-## Anggota Kelompok
+
+# 1. Judul Proyek
+Klasifikasi Penyakit Liver Menggunakan Algoritma Decision Tree dan Neural Network
+
+## Nama Proyek
+- SmartLiver
+
+## Nama Kelompok
 - Restu Bagja Maulud (2306043)
 
-
-# Business Understanding
+# 2. Business Understanding
 ## Permasalahan Dunia Nyata
 Penyakit liver merupakan salah satu penyakit yang sering kali tidak menunjukkan gejala jelas pada tahap awal. Hal ini menyebabkan banyak pasien baru menyadari adanya masalah pada hati ketika penyakit sudah memasuki tahap lanjut. Dalam dunia medis, diagnosis dini terhadap penyakit ini sangat penting agar penanganan bisa lebih cepat dan tepat. Oleh karena itu, dibutuhkan sistem yang mampu membantu diagnosis dini berdasarkan data hasil tes laboratorium pasien.
 ## Tujuan Proyek
@@ -19,7 +24,7 @@ Pengguna dari sistem ini meliputi:
 Dengan menggunakan metode kecerdasan buatan, proses diagnosis penyakit liver dapat menjadi lebih cepat, efisien, dan berbasis data. Model machine learning seperti Decision Tree dan Neural Network memungkinkan sistem untuk mendeteksi pola dari data medis yang kompleks dan membantu dokter dalam mendeteksi penyakit sebelum munculnya gejala klinis yang jelas. AI juga mengurangi kemungkinan kesalahan manusia dalam proses diagnosis.
 
 
-# Data Understanding
+# 3. Data Understanding
 ## Sumber Data
 Dataset diperoleh dari file CSV yang menyerupai "Indian Liver Patient Dataset (ILPD)" yang tersedia di UCI Machine Learning Repository. Dataset ini merupakan data simulasi medis yang sangat sering digunakan dalam proyek klasifikasi kesehatan, termasuk di jurnal CESS 2019 yang menjadi acuan.
 ## Deskripsi Fitur (Atribut)
@@ -44,7 +49,7 @@ Data terdiri dari ratusan baris, dengan setiap baris mewakili satu pasien. Data 
 Dataset terdiri dari kombinasi data numerik dan kategorikal. Fitur target adalah kolom "Dataset" yang memiliki dua nilai klasifikasi: 0 dan 1, menjadikan masalah ini sebagai tugas klasifikasi biner.
 
 
-# Exploratory Data Analysis (EDA)
+# 4. Exploratory Data Analysis (EDA)
 ## Visualisasi Distribusi Data
 Distribusi umur pasien sebagian besar berada di rentang 30–60 tahun. Gender menunjukkan distribusi tidak seimbang, dengan pasien laki-laki lebih banyak daripada perempuan. Nilai Total Bilirubin dan SGPT menunjukkan distribusi yang miring (skewed), yang mengindikasikan adanya outlier atau data ekstrem.
 
@@ -61,7 +66,7 @@ Data menunjukkan ketidakseimbangan pada target klasifikasi, di mana jumlah pasie
 Fitur-fitur yang berkaitan dengan kadar enzim hati dan bilirubin tampak berkontribusi besar dalam klasifikasi penyakit liver. Analisis awal ini memberikan petunjuk bahwa model dapat memanfaatkan fitur-fitur tersebut untuk klasifikasi yang akurat.
 
 
-# Data Preparation 
+# 5. Data Preparation 
 ## Pembersihan Data (Null Value, Duplikasi)
 Data diperiksa dan dibersihkan dari nilai kosong dan duplikasi. Penghapusan dilakukan karena jumlah data kosong tidak terlalu banyak dan tidak memengaruhi distribusi data secara signifikan.
 ## Encoding Data Kategorik
@@ -72,7 +77,7 @@ Beberapa fitur numerik memiliki skala berbeda-beda. Oleh karena itu, dilakukan s
 Dataset dibagi menjadi dua bagian: 80% untuk pelatihan (train) dan 20% untuk pengujian (test) dengan random_state untuk memastikan replikasi hasil yang konsisten.
 
 
-# Modeling
+# 6. Modeling
 ## Pemilihan Algoritma
 Model yang digunakan dalam proyek ini adalah:
 - Decision Tree Classifier (dengan entropy/C4.5)
@@ -85,7 +90,7 @@ Kedua model diimplementasikan dalam Google Colab dengan bahasa Python dan pustak
 Model Decision Tree divisualisasikan menggunakan plot_tree() agar aturan-aturan klasifikasi bisa dilihat secara langsung dan mudah dipahami oleh user non-teknis.
 
 
-# Evaluation
+# 7. Evaluation
 ## Confusion Matrix
 Confusion matrix dari kedua model menampilkan hasil klasifikasi terhadap kelas 0 dan 1 (tidak sakit dan sakit liver), yang mencakup nilai TP, FP, TN, dan FN.
 ## Metrik Evaluasi
@@ -100,7 +105,7 @@ Model Decision Tree menunjukkan performa yang lebih unggul dalam hal akurasi dan
 
 ![Visualisasi Pohon Keputusan](Images/Pohon_Keputusan.png)
 
-# Kesimpulan dan Rekomendasi
+# 8. Kesimpulan dan Rekomendasi
 ## Ringkasan Hasil Modeling dan Evaluasi
 Decision Tree menghasilkan akurasi dan AUC yang lebih tinggi dibandingkan Neural Network. Hal ini menunjukkan bahwa untuk dataset penyakit liver ini, Decision Tree adalah model terbaik.
 ## Apakah Tujuan Proyek Tercapai?
@@ -114,7 +119,7 @@ Kelebihan Decision Tree adalah interpretasi mudah dan performa baik di dataset k
 - Terapkan teknik balancing data seperti SMOTE untuk atasi kelas tidak seimbang.
 
 
-# Referensi
+# 9. Referensi
 1. Patimah, E., Haekal, V. B., & Sandya Prasvita, D. (2021). Klasifikasi Penyakit Liver dengan Menggunakan Metode Decision Tree. Seminar Nasional Mahasiswa Ilmu Komputer Dan Aplikasinya (SENAMIKA) Jakarta-Indonesia, 2(1), 655–659.
 2. Setiawati, I., Wibowo, A. P., & Hermawan, A. (2019). Pendahuluan Tinjauan Pustaka Penelitian Sebelumnya Klasifikasi. Jurnal of Information System Management, 1(1), 13–17.
 3. Sodikin, D. A., Prayoga, R., & Purwanto, A. N. I. (2024). Analisis Metode Decision Tree Dan Naïve Bayes Pada Pasien Penyakit Liver. Prosiding TAU SNARS-TEK Seminar Nasional Rekayasa Dan Teknologi, 3(1), 12–18.
@@ -122,4 +127,4 @@ Kelebihan Decision Tree adalah interpretasi mudah dan performa baik di dataset k
 5. Restiani, D.-. (2018). Kombinasi Algoritma Cart Dan Ripper Untuk Mendiagnosis Penyakit Liver Berbasis Correlation Based Feature Selection. Jurnal Teknik Informatika, 11(1), 31–36. https://doi.org/10.15408/jti.v11i1.6660
 
 
-# Lampiran
+# 10. Lampiran
