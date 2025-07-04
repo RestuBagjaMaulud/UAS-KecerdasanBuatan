@@ -52,6 +52,9 @@ Distribusi umur pasien sebagian besar berada di rentang 30–60 tahun. Gender me
 
 ## Analisis Korelasi Antar Fitur
 Heatmap korelasi mengungkapkan bahwa fitur Total_Bilirubin memiliki korelasi tinggi dengan Direct_Bilirubin. SGPT dan SGOT juga menunjukkan korelasi yang kuat satu sama lain. Ini menunjukkan bahwa beberapa fitur saling berkaitan erat secara medis.
+
+![Visualisasi Korelasi](Images/Korelasi_antar_numerik.png)
+
 ## Deteksi Data Tidak Seimbang (Imbalanced Classes)
 Data menunjukkan ketidakseimbangan pada target klasifikasi, di mana jumlah pasien yang menderita penyakit liver (label 1) lebih banyak dibanding yang tidak. Hal ini dapat menyebabkan model bias terhadap kelas mayoritas jika tidak ditangani dengan baik.
 ## Insight Awal dari Pola Data
@@ -95,6 +98,7 @@ Confusion matrix dari kedua model menampilkan hasil klasifikasi terhadap kelas 0
 ## Penjelasan Kinerja Model
 Model Decision Tree menunjukkan performa yang lebih unggul dalam hal akurasi dan AUC. Selain itu, interpretasi yang mudah dari Decision Tree menjadikannya lebih cocok untuk aplikasi medis yang membutuhkan transparansi keputusan. Neural Network masih dapat ditingkatkan dengan tuning parameter dan penggunaan data yang lebih besar.
 
+![Visualisasi Pohon Keputusan](Images/Pohon_Keputusan.png)
 
 # Kesimpulan dan Rekomendasi
 ## Ringkasan Hasil Modeling dan Evaluasi
@@ -119,15 +123,3 @@ Kelebihan Decision Tree adalah interpretasi mudah dan performa baik di dataset k
 
 
 # Lampiran
-
-
-
-
-
-
-
-
-
-
-
-
