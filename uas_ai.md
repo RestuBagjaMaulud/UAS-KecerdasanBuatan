@@ -1,6 +1,6 @@
 # Laporan Proyek Machine Learning - Restu Bagja Maulud
 # 1. Judul Proyek
-Klasifikasi Penyakit Liver Menggunakan Algoritma Decision Tree dan Neural Network
+## Klasifikasi Penyakit Liver Menggunakan Algoritma Decision Tree dan Neural Network
 ## Nama Proyek
 - SmartLiver
 ## Nama Kelompok
